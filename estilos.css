@@ -1,13 +1,13 @@
-/* CSS Stylesheet generado automáticamente */
+/* CSS Stylesheet generado automáticamente y optimizado con la nueva paleta */
 
 :root {
-    /* Paleta de colores */
-    --color-trazo: #092342;
-    --color-trazo2: #1E624C;
-    --color-trazo3: #A40000;
-    --color-trazo4: #EAC117;
-    --color-trazo5: #420931;
-    --color-fondo: #F5F3F5;
+    /* Paleta de colores balanceada */
+    --color-trazo: #092342;   /* Texto principal <p> y botones */
+    --color-trazo2: #114209;  /* Subtítulos h2 y h3 */
+    --color-trazo3: #422E09;  /* Textos secundarios / Alertas */
+    --color-trazo4: #486B97;  /* Enlaces, hovers y bordes */
+    --color-trazo5: #420931;  /* Título principal h1 */
+    --color-fondo: #F5F3F5;   /* Fondo de la página */
 
     /* Estilo de letra (Tamaños en px) */
     --title-font-size: 40px;
@@ -34,16 +34,16 @@ body {
 /* Tipografía */
 h1, .title {
     font-size: var(--title-font-size);
-    color: var(--color-trazo2);
+    color: var(--color-trazo5); /* Sofisticado ciruela oscuro */
     margin-bottom: 20px;
     font-weight: 700;
-    border-bottom: 4px solid var(--color-trazo2);
+    border-bottom: 4px solid var(--color-trazo5); /* Línea a juego con el h1 */
     padding-bottom: 10px;
 }
 
 h2, .subtitle {
     font-size: var(--subtitle-font-size);
-    color: var(--color-trazo);
+    color: var(--color-trazo2); /* Verde bosque oscuro para jerarquía */
     margin-top: 30px;
     margin-bottom: 15px;
     font-weight: 600;
@@ -51,32 +51,32 @@ h2, .subtitle {
 
 h3 {
     font-size: calc(var(--body-font-size));
-    color: var(--color-trazo5);
+    color: var(--color-trazo2); /* Consistencia con h2 */
     margin-bottom: 10px;
 }
 
 p {
     margin-bottom: 20px;
-    color: #000000;
+    color: var(--color-trazo); /* Vinculado al color de fuente solicitado */
 }
 
 /* Enlaces y Elementos Interactivos */
 a {
-    color: var(--color-trazo3);
-    text-decoration: none;
+    color: var(--color-trazo4); /* Azul medio para indicar que es un enlace */
+    text-decoration: underline; /* Subrayado clásico para accesibilidad */
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: var(--color-trazo4);
-    text-decoration: underline;
+    color: var(--color-trazo); /* Cambia al azul marino oscuro al pasar el cursor */
+    text-decoration: none;
 }
 
 /* Componentes Comunes */
 .btn-primary {
     display: inline-block;
-    background-color: var(--color-trazo);
-    color: #ffffff;
+    background-color: var(--color-trazo); /* Fondo azul marino profundo */
+    color: var(--color-fondo); /* Texto claro para un contraste óptimo */
     padding: 12px 24px;
     border: none;
     border-radius: 4px;
@@ -86,21 +86,21 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background-color: var(--color-trazo);
+    background-color: var(--color-trazo4); /* El azul medio reacciona en el hover del botón */
 }
 
 .alert-warning {
-    background-color: var(--color-trazo4);
-    color: var(--color-trazo);
+    background-color: rgba(72, 107, 151, 0.15); /* Fondo sutil derivado del azul medio */
+    color: var(--color-trazo3); /* Texto marrón café oscuro */
     padding: 15px;
-    border-left: 6px solid var(--color-trazo3);
+    border-left: 6px solid var(--color-trazo3); /* Borde marrón destacado */
     border-radius: 4px;
     margin: 20px 0;
 }
 
 .accent-block {
-    background-color: #ffffff;
-    border: 2px solid var(--color-trazo5);
+    background-color: #ffffff; /* Fondo blanco para crear relieve */
+    border: 2px solid var(--color-trazo4); /* Azul medio para un contenedor armónico */
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
