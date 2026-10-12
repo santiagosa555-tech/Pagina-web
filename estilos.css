@@ -34,7 +34,7 @@ body {
 /* Tipografía */
 h1, .title {
     font-size: var(--title-font-size);
-    color: var(--color-trazo);
+    color: var(--color-trazo2);
     margin-bottom: 20px;
     font-weight: 700;
     border-bottom: 4px solid var(--color-trazo2);
@@ -43,7 +43,7 @@ h1, .title {
 
 h2, .subtitle {
     font-size: var(--subtitle-font-size);
-    color: var(--color-trazo2);
+    color: var(--color-trazo);
     margin-top: 30px;
     margin-bottom: 15px;
     font-weight: 600;
@@ -57,7 +57,7 @@ h3 {
 
 p {
     margin-bottom: 20px;
-    color: #333333;
+    color: #000000;
 }
 
 /* Enlaces y Elementos Interactivos */
